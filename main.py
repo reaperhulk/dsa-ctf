@@ -31,15 +31,11 @@ def returnrand():
 @app.route('/public_key')
 def public_key():
     pn = key.private_numbers()
-    g = pn.public_numbers.parameter_numbers.g
-    q = pn.public_numbers.parameter_numbers.q
-    p = pn.public_numbers.parameter_numbers.p
-    y = pn.public_numbers.y
     return json.dumps({
-        'g': g,
-        'q': q,
-        'p': p,
-        'y': y
+        'g': pn.public_numbers.parameter_numbers.g,
+        'q': pn.public_numbers.parameter_numbers.q,
+        'p': pn.public_numbers.parameter_numbers.p,
+        'y': pn.public_numbers.y
     })
 
 
