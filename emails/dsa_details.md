@@ -7,8 +7,8 @@ To: Faceless Employee <femployee@personalemail.local>
 Okay, I spent some time researching DSA and here's some more information for
 you. A complete DSA key is made up of 5 values: `p`, `q`, `g`, `x`, and `y`.
 `p`, `q`, `g`, and `y` are all public values. The `/public_key` endpoint on the
-server gives these values and can be used to to verify that a given signature
-is valid. The private value, x, is what we need to unlock the funds at my bank.
+server gives these values and can be used to verify that a given signature is
+valid. The private value, x, is what we need to unlock the funds at my bank.
 A DSA signature is normally computed as follows:
 
 * First pick a `k` where 0 < `k` < `q`
