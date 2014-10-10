@@ -17,3 +17,8 @@ The `/random` source on the secure server also uses MT, and due to the way
 Python works it appears there's only one global instance of MT. So, you should
 be able to query that endpoint and then invert the output to derive the state
 of the server's RNG.
+
+We're getting close, I can feel it. Email me if you need help putting it all
+together.
+
+-Hat

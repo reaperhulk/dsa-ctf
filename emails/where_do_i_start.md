@@ -10,3 +10,7 @@ between 0 and the value of `q` though. I think `q` is part of the DSA
 parameters? While I was searching for information I also stumbled across some
 claims that reusing a k value or having a predictable k can cause private key
 disclosure.
+
+If you need more information about DSA just email me.
+
+-Hat

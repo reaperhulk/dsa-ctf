@@ -12,7 +12,9 @@ is valid. The private value, x, is what we need to unlock the funds at my bank.
 A DSA signature is normally computed as follows:
 
 * First pick a `k` where 0 < `k` < `q`
-* Compute the value `r` via `pow(g, k, p) % q`
+* Compute the value `r` via `pow(g, k, p) % q`. This is called modular
+  exponentiation and is necessary for extremely large numbers. Naïvely
+  attempting to compute `g ** k % p` will be very slow.
 * Calculate the modular multiplicative inverse of `k` modulo `q`. That is,
   `kinv` such that `(k * kinv) % q = 1`
 * Compute the hash of the message you want to sign. Based on what you told me
@@ -28,3 +30,6 @@ Using that last equation we can use modular arithmetic to solve for x.
 
 `rinv` is calculated just like `kinv` above. So since we know every value with
 the exception of `k` all we need to learn is `k` to obtain `x`!
+
+Why don't you look at the source code to see how they derive `k` for signatures.
+It must be predictable in some fashion. Email me if you're having trouble!

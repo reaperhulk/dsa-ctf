@@ -30,6 +30,7 @@ system that provides statistically random integers upon request. Simply make a
 `GET` request to `/random` and you will receive an unsigned 32-bit integer in
 response. You may use this randomness however you see fit.
 
+===============================================================
 
 From: Hat <hat@anonymous.local>
 
