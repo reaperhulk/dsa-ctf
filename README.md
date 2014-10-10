@@ -41,7 +41,7 @@ To: Faceless Employee <femployee@personalemail.local>
 Faceless,
 
 I am a former Innitech client, but after a disagreement about the disbursement
-of $3M I recently received I terminated the relationship.  Unfortunately, the
+of $30M I recently received I terminated the relationship.  Unfortunately, the
 only way to access the funds is by signing some sensitive data with Innitech's
 key and they are refusing to allow me access. If you are willing to help me
 resolve this issue I'd be happy to give you 20% of the $3M I need to transfer.
