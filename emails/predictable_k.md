@@ -5,4 +5,8 @@ Subject: Re: Predictable k?
 To: Faceless Employee <femployee@personalemail.local>
 
 From what you're telling me it sounds like it might be worth looking at what
-Python uses for randrange in the random module. Maybe that can be predicted?
+Python uses for randrange in the random module. Maybe that can be predicted? Do
+these links help?
+
+* https://github.com/python/cpython/blob/c7688b44387d116522ff53c0927169db45969f0e/Lib/random.py
+* https://github.com/python/cpython/blob/c7688b44387d116522ff53c0927169db45969f0e/Modules/_randommodule.c

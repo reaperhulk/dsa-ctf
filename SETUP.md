@@ -1,3 +1,5 @@
+**This server requires Python 3 to operate!**
+
 To run the server locally:
 
 * Create a new virtualenv and `pip install -r requirements.txt`
