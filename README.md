@@ -19,10 +19,10 @@ also make a `GET` request to `/public_key` to obtain a JSON structure
 containing p, q, g, and y. These are the public components of the DSA key.
 
 As a developer you may also be interested in the source code to this service,
-which is located at <TODO: github path>. All commits to this repository follow
-our standard secure SDLC policies, which you may access on our corporate
-intranet. If you'd like to run your own local copy of the signing server please
-see [SETUP](SETUP.md).
+which can be obtained from our [repository](https://github.com/reaperhulk/dsa-ctf).
+All commits to this repo follow our standard secure SDLC policies, which you
+may access on our corporate intranet. If you'd like to run your own local copy
+of the signing server please see [SETUP](SETUP.md).
 
 As you know, Innitech is foremost a company concerned about security. To further
 our goal of maximal security we also supply an additional endpoint on our secure
