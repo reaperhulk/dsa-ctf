@@ -46,7 +46,6 @@ def sign(key, data):
     q = pn.public_numbers.parameter_numbers.q
     p = pn.public_numbers.parameter_numbers.p
     x = pn.x
-    # k = random.getrandbits(32)
     k = random.randrange(2, q)
     kinv = _modinv(k, q)
     r = pow(g, k, p) % q
