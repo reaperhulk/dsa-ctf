@@ -26,7 +26,9 @@ Using that last equation we can use modular arithmetic to solve for x.
 
 1. `s = kinv * (h + r * x) % q`
 2. `s * k = (h + r * x) % q`
-3. `rinv * ((s * k) - h) % q = x`
+3. `(s * k) % q = (h + r * x) % q` (s * k) will always be less than q, so adding `% q` is just for clarity.
+4. `((s * k) - h) % q = (r * x) % q`
+5. `rinv * ((s * k) - h) % q = x`
 
 `rinv` is calculated just like `kinv` above. So since we know every value with
 the exception of `k` all we need to learn is `k` to obtain `x`!
