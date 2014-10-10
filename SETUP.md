@@ -1,4 +1,8 @@
-**This server requires Python 3 to operate!**
+###OS Prerequisites
+* Python 3
+* OpenSSL
+* libffi
+* Development headers for OpenSSL, libffi, and Python
 
 To run the server locally:
 
