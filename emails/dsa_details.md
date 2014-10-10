@@ -31,5 +31,9 @@ Using that last equation we can use modular arithmetic to solve for x.
 `rinv` is calculated just like `kinv` above. So since we know every value with
 the exception of `k` all we need to learn is `k` to obtain `x`!
 
-Why don't you look at the source code to see how they derive `k` for signatures.
+Once we have `x` we can confirm it's correct by computing `g**x % p`. The
+result should be equal to `y`. Remember that you'll want to do that via
+modular exponentiation!
+
+Why don't you look at the source code to see how they derive `k` for signatures?
 It must be predictable in some fashion. Email me if you're having trouble!

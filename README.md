@@ -48,6 +48,8 @@ resolve this issue I'd be happy to give you 20% of the $3M I need to transfer.
 I know it's a lot to ask, but could you somehow obtain the private key and
 send it to me?
 
+If you don't know where to start, feel free to email me back and we can discuss.
+
 ####Inbox
 [Re: Where do I start?](emails/where_do_i_start.md)
 
