@@ -49,7 +49,11 @@ send it to me?
 
 ####Inbox
 [Re: Where do I start?](emails/where_do_i_start.md)
+
 [Re: Do you have more DSA details?](emails/dsa_details.md)
+
 [Re: Predictable k?](emails/predictable_k.md)
+
 [Re: randrange issues](emails/randrange_issues.md)
+
 [Re: putting it all together](emails/putting_it_all_together.md)
