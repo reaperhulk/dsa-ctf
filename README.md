@@ -44,7 +44,7 @@ I am a former Innitech client, but after a disagreement about the disbursement
 of $30M I recently received I terminated the relationship.  Unfortunately, the
 only way to access the funds is by signing some sensitive data with Innitech's
 key and they are refusing to allow me access. If you are willing to help me
-resolve this issue I'd be happy to give you 20% of the $3M I need to transfer.
+resolve this issue I'd be happy to give you 20% of the $30M I need to transfer.
 I know it's a lot to ask, but could you somehow obtain the private key and
 send it to me?
 
