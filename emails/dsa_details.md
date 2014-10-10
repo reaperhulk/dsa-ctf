@@ -24,9 +24,9 @@ A DSA signature is normally computed as follows:
 
 Using that last equation we can use modular arithmetic to solve for x.
 
-* `s = kinv * (h + r * x) % q`
-* `s * k = (h + r * x) % q`
-* `rinv * ((s * k) - h) % q = x`
+1. `s = kinv * (h + r * x) % q`
+2. `s * k = (h + r * x) % q`
+3. `rinv * ((s * k) - h) % q = x`
 
 `rinv` is calculated just like `kinv` above. So since we know every value with
 the exception of `k` all we need to learn is `k` to obtain `x`!
