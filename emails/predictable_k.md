@@ -1,4 +1,4 @@
-From: Hat <hat@anonymous.local>
+From: Dark Grey Hat <hat@anonymous.local>
 
 Subject: Re: Predictable k?
 

@@ -32,7 +32,7 @@ response. You may use this randomness however you see fit.
 
 ===============================================================
 
-From: Hat <hat@anonymous.local>
+From: Ostensibly White Hat <hat@anonymous.local>
 
 Subject: Earn Millions In A Few Steps
 
@@ -54,6 +54,8 @@ If you don't know where to start, feel free to email me back and we can discuss.
 [Re: Where do I start?](emails/where_do_i_start.md)
 
 [Re: Do you have more DSA details?](emails/dsa_details.md)
+
+[Re: How would you solve for x?](emails/solve_for_x.md)
 
 [Re: Predictable k?](emails/predictable_k.md)
 

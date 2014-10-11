@@ -1,4 +1,4 @@
-From: Hat <hat@anonymous.local>
+From: Light Grey Hat <hat@anonymous.local>
 
 Subject: Re: Do you have more DSA details?
 
@@ -22,20 +22,18 @@ A DSA signature is normally computed as follows:
   order. `int.from_bytes(hashlib.sha1(data).digest(), 'big')` will do this.
 * Finally, calculate `s` using `kinv * (h + r * x) % q`
 
-Using that last equation we can use modular arithmetic to solve for x.
+From what you've told me, the `main.py` in the secure signer code base may
+already have a signature implementation? Take a look !
 
-1. `s = (kinv * (h + r * x)) % q`
-2. `s * k = (h + r * x) % q`
-3. `(s * k) % q = (h + r * x) % q` **Note:** (s * k) will always be less than q, so adding `% q` is just for clarity.
-4. `((s * k) - h) % q = (r * x) % q`
-5. `(rinv * ((s * k) - h)) % q = x`
+To confirm that `r` and `s` are correct you can also perform a DSA verification.
 
-`rinv` is calculated just like `kinv` above. So since we know every value with
-the exception of `k` all we need to learn is `k` to obtain `x`!
+* Compute `w`, the modular inverse of `s` modulo `q`
+* Calculate `u1 = (h * w) % q`
+* Calculate `u2 = (r * w) % q`
+* Calculate `v`, defined as `((g ** u1) * (y ** u2)) % p % q`. This will need to be done via modular exponentiation!
 
-Once we have `x` we can confirm it's correct by computing `g**x % p`. The
-result should be equal to `y`. Remember that you'll want to do that via
-modular exponentiation!
+At this point `v` should be equal to `r`.
 
-Why don't you look at the source code to see how they derive `k` for signatures?
-It must be predictable in some fashion. Email me if you're having trouble!
+With a working DSA implementation, now we can look more closely at recovering
+the private key.  Is there some way to solve for `x` given
+`s = (kinv * (h + r * x)) % q`? That might be worth looking into.

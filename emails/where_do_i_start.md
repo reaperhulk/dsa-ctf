@@ -1,4 +1,4 @@
-From: Hat <hat@anonymous.local>
+From: White-ish Hat <hat@anonymous.local>
 
 Subject: Re: Where do I start?
 

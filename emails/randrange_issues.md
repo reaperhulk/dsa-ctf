@@ -1,4 +1,4 @@
-From: Hat <hat@anonymous.local>
+From: Black Hat <hat@anonymous.local>
 
 Subject: Re: randrange issues
 

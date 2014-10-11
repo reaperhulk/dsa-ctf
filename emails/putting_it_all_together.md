@@ -1,4 +1,4 @@
-From: Hat <hat@anonymous.local>
+From: Slightly Darker Black Hat <hat@anonymous.local>
 
 Subject: Re: putting it all together
 
