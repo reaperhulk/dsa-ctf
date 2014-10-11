@@ -14,9 +14,10 @@ This service is used to sign messages and authenticate they came from an
 Innitech employee. For security purposes the key resides solely on this secure
 server and all employees must make a `GET` request to `/sign/<data>` where
 `<data>` is the payload you wish to sign. You will receive a JSON structure
-containing r and s, the two components of a DSA signature, in response. You may
-also make a `GET` request to `/public_key` to obtain a JSON structure
-containing p, q, g, and y. These are the public components of the DSA key.
+containing `r` and `s`, the two components of a DSA signature, in response.
+You may also make a `GET` request to `/public_key` to obtain a JSON structure
+containing `p`, `q`, `g`, and `y`. These are the public components of the DSA
+key.
 
 As a developer you may also be interested in the source code to this service,
 which can be obtained from our [repository](https://github.com/reaperhulk/dsa-ctf).
