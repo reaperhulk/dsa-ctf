@@ -19,7 +19,8 @@ A DSA signature is normally computed as follows:
   `kinv` such that `(k * kinv) % q = 1`
 * Compute the hash of the message you want to sign. Based on what you told me
   they're using SHA1 and converting it into an integer assuming big endian byte
-  order. `int.from_bytes(hashlib.sha1(data).digest(), 'big')` will do this.
+  order. `int.from_bytes(hashlib.sha1(data).digest(), 'big')` (Python 3
+  required!) will do this.
 * Finally, calculate `s` using `kinv * (h + r * x) % q`
 
 From what you've told me, the [main.py](https://github.com/reaperhulk/dsa-ctf/blob/master/main.py#L42)
