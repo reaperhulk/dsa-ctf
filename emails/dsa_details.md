@@ -12,15 +12,16 @@ valid. The private value, x, is what we need to unlock the funds at my bank.
 A DSA signature is normally computed as follows:
 
 * First pick a `k` where 0 < `k` < `q`
-* Compute the value `r` via `pow(g, k, p) % q`. This is called modular
-  exponentiation and is necessary for extremely large numbers. Naïvely
-  attempting to compute `g ** k % p` will be very slow.
+* Compute the value `r`. Conceptually this is g<sup>k</sup> mod p mod q.
+  However, as `g` and `k` are both large numbers it is very slow to compute this
+  value directly. Fortunately [modular exponentiation](http://en.wikipedia.org/wiki/Modular_exponentiation)
+  allows us to do the calculation very quickly. In Python you can calculate
+  this via the built-in `pow` method: `pow(g, k, p) % q`.
 * Calculate the modular multiplicative inverse of `k` modulo `q`. That is,
   `kinv` such that `(k * kinv) % q = 1`
 * Compute the hash of the message you want to sign. Based on what you told me
   they're using SHA1 and converting it into an integer assuming big endian byte
-  order. `int.from_bytes(hashlib.sha1(data).digest(), 'big')` (Python 3
-  required!) will do this.
+  order. To do this in Python: `int.from_bytes(hashlib.sha1(data).digest(), 'big')` (Python 3 required!)
 * Finally, calculate `s` using `kinv * (h + r * x) % q`
 
 From what you've told me, the [main.py](https://github.com/reaperhulk/dsa-ctf/blob/master/main.py#L42)
