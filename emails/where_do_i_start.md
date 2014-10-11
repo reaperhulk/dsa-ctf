@@ -8,8 +8,9 @@ I'm glad you're interested, but I'm afraid I don't know much about how DSA
 signing works. I've heard that you have to pick a random integer `k` that is
 between 0 and the value of `q` though. I think `q` is part of the DSA
 parameters? While I was searching for information I also stumbled across some
-claims that reusing a k value or having a predictable k can cause private key
-disclosure.
+claims that reusing a `k` value or having a predictable `k` can cause private
+key disclosure. Maybe http://en.wikipedia.org/wiki/Digital_Signature_Algorithm
+will help?
 
 If you need more information about DSA just email me.
 
