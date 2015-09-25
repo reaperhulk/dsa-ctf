@@ -24,7 +24,7 @@ A DSA signature is normally computed as follows:
   order. To do this in Python: `int.from_bytes(hashlib.sha1(data).digest(), 'big')` (Python 3 required!)
 * Finally, calculate `s` using `kinv * (h + r * x) % q`
 
-From what you've told me, the [main.py](https://github.com/reaperhulk/dsa-ctf/blob/master/main.py#L42)
+From what you've told me, the [main.py](https://github.com/reaperhulk/dsa-ctf/blob/master/main.py#L55)
 in the secure signer code base may already have a signature implementation?
 Take a look !
 

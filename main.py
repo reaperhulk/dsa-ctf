@@ -1,6 +1,8 @@
+import binascii
 import hashlib
 import json
 import random
+import struct
 
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.asymmetric.rsa import _modinv
@@ -23,9 +25,20 @@ def signer(data):
     return json.dumps({'r': r, 's': s})
 
 
-@app.route('/random')
+@app.route('/forgotpass')
 def returnrand():
-    return str(random.getrandbits(32))
+    # Generate a random value for the reset URL so it isn't guessable
+    random_value = binascii.hexlify(struct.pack(">Q", random.getrandbits(64)))
+    return "https://innitech.local/resetpass/{}".format(
+        random_value.decode('ascii')
+    )
+
+
+@app.route('/resetpass/<key>')
+def resetpass(key):
+    # TODO: Implement this later. Innitech doesn't utilize users in this system
+    # right now anyway.
+    return "", 500
 
 
 @app.route('/public_key')

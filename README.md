@@ -25,11 +25,11 @@ All commits to this repo follow our standard secure SDLC policies, which you
 may access on our corporate intranet. If you'd like to run your own local copy
 of the signing server please see [SETUP](SETUP.md).
 
-As you know, Innitech is foremost a company concerned about security. To further
-our goal of maximal security we also supply an additional endpoint on our secure
-system that provides statistically random integers upon request. Simply make a
-`GET` request to `/random` and you will receive an unsigned 32-bit integer in
-response. You may use this randomness however you see fit.
+You have been automatically logged into the system via our SSO, but you can
+request a password reset link by making a `GET` request to `/forgotpass`. This
+will supply a link that you can use to change the password. The actual password
+reset functionality is not yet implemented, but password reset code generation
+is production quality.
 
 ===============================================================
 

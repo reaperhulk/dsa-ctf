@@ -10,7 +10,9 @@ then you just need to implement the same logic that Python uses for `randrange`.
 
 At that point the process looks like:
 
-* Make calls to `/random` to obtain internal state of RNG and build local clone
+* Make calls to `/forgotpass` to obtain internal state of RNG and build local clone
+  * You'll need to split the reset code at the end of the URL and turn it into
+    two values of the internal state since it is 64-bits of data.
 * Make a call to `/sign` with some data you want to sign and get back r, s.
 * Use r, s, p, q, g, and the value you get from your cloned RNG (which is the
   k you predict the server will use) to solve for x.

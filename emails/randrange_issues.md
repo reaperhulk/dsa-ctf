@@ -13,7 +13,7 @@ state vector and then tempers it with a series of bitwise operations. Those
 operations are invertible, so given enough outputs you should be able to derive
 the complete state of the RNG and predict all future outputs.
 
-The `/random` source on the secure server also uses MT, and due to the way
+The `/forgotpass` endpoint on the secure server also uses MT, and due to the way
 Python works it appears there's only one global instance of MT. So, you should
 be able to query that endpoint and then invert the output to derive the state
 of the server's RNG.
