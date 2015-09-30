@@ -52,6 +52,14 @@ def public_key():
     })
 
 
+@app.route('/')
+def main():
+    return (
+        "Welcome to Innitech. Please see https://github.com/reaperhulk/dsa-ctf"
+        " for information."
+    )
+
+
 def sign(key, data):
     data = data.encode('ascii')
     pn = key.private_numbers()
