@@ -1,6 +1,6 @@
-#Breakin' DSA
+# Breakin' DSA
 
-###Welcome To Innitech
+### Welcome To Innitech
 
 From: HR <hr@innitech.local>
 
@@ -51,7 +51,7 @@ send it to me?
 
 If you don't know where to start, feel free to email me back and we can discuss.
 
-####Inbox
+#### Inbox
 [Re: Where do I start?](emails/where_do_i_start.md)
 
 [Re: Do you have more DSA details?](emails/dsa_details.md)
